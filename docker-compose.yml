@@ -11,6 +11,5 @@ services:
       - NODE_ENV=production
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.vite.rule=Host(`your-subdomain.yourdomain.com`)"
       - "traefik.http.routers.vite.entrypoints=websecure"
       - "traefik.http.routers.vite.tls.certresolver=letsencrypt"
